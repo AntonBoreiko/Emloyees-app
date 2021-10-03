@@ -38,8 +38,16 @@ class App extends Component {
       }
       this.setState(({ data }) => {
          const newArr = [...data, newItem]
-         return {
-            data: newArr
+         if (newItem.name.length < 3) {
+            alert('Имя должно быть больше 3 букв')
+            return
+         } else if (+newItem.salary < 100) {
+            alert(' Зарплата должно быть больше 100$ ')
+            return
+         } else {
+            return {
+               data: newArr
+            }
          }
       })
    }
