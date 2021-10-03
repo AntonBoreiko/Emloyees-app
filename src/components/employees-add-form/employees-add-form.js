@@ -20,6 +20,10 @@ class EmployeesAddForm extends Component {
 
    onSubmit = (e) => {
       e.preventDefault()
+      if (this.state.name.length < 3 || !this.state.salary) {
+         alert('Имя должно быть больше 3 букв и зарплата больше 0 ')
+         return
+      };
       this.props.onAdd(this.state.name, this.state.salary)
 
       this.setState({
