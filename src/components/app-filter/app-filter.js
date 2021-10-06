@@ -24,9 +24,8 @@ const AppFilter = (props) => {
          </button>
       )
    })
-   // onFilter = (data) => {
 
-   // }
+
    return (
       <div className="btn-group">
          {buttons}

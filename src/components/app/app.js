@@ -59,6 +59,20 @@ class App extends Component {
       }))
    }
 
+
+   onInputSalary = (id, e) => {
+      this.setState(({ data }) => ({
+         data: data.map(item => {
+            if (item.id === id) {
+               item.salary = e.target.value
+               return item
+            }
+            return item
+         })
+      }))
+   }
+
+
    searchEmp = (items, term) => {
       if (term.length === 0) {
          return items
@@ -87,6 +101,8 @@ class App extends Component {
    onFilterSelect = (filter) => {
       this.setState({ filter })
    }
+
+
    render() {
       const { data, term, filter } = this.state
       const employees = this.state.data.length
@@ -110,6 +126,7 @@ class App extends Component {
                data={visibleData}
                onDelete={this.deleteItem}
                onToggleProp={this.onToggleProp}
+               onInputSalary={this.onInputSalary}
 
             />
             <EmployeesAddForm onAdd={this.addItem} />
