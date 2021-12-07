@@ -8,5 +8,4 @@
 
  ### Emloyees-app + HEROKU link: https://app-emloyees.herokuapp.com/
 
-<img src="./src/img/calc.gif">
 
