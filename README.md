@@ -6,7 +6,7 @@
 3. `npm install`
 4. `npm start`
 
- ### Emloyees-app + HEROKU link:<a href="https://app-emloyees.herokuapp.com/"></a>
+ ### Emloyees-app + HEROKU link: https://app-emloyees.herokuapp.com/
 
 <img src="./src/img/calc.gif">
 
