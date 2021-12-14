@@ -1,8 +1,8 @@
 
 ## emloyees-app - React приложение учета сотрудников компании и их ЗП. 
 
-1. `git clone https://github.com/AntonBoreiko/Emloyees-app.git`
-2. `cd ./Emloyees-app`
+1. `git clone https://github.com/AntonBoreiko/emloyees-app.git`
+2. `cd ./emloyees-app`
 3. `npm install`
 4. `npm start`
 
